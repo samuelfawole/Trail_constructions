@@ -1,0 +1,411 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+@media (max-width: 57em){
+  html{
+    font-size: 54%;
+  }
+}
+@media (max-width: 50em){
+  html{
+    font-size: 48%;
+  }
+}
+
+@media (max-width: 42.75em){
+  html{
+    font-size: 42%;
+  }
+}
+body{
+  background-color: whitesmoke;
+  font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.navigation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 3rem;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  z-index: 10002;;
+}
+.links,
+.links:visited,
+.links:active{
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: rgb(66, 66, 83);
+}
+.links:hover{
+  color:#2e2ec2
+}
+.links:not(:last-child){
+  margin-right:10rem ;
+}
+
+@media (max-width: 57em){
+  .links,
+.links:visited,
+.links:active{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 50em){
+  .links,
+.links:visited,
+.links:active{
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 40em){
+  .links,
+.links:visited,
+.links:active{
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 27em){
+  .links:not(:last-child){
+    margin-right:6rem ;
+  }
+}
+#bt.bt{
+  background-color: #151581;
+  padding: 1rem 3rem;
+  color: #fff;
+}
+
+#bt.bt:hover{
+  background-color: white;
+  padding: .5rem 2.5rem;
+  border: .5rem solid #151581;
+  color: #151581;
+}
+
+.bg{
+  min-width:100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.bg__img{
+  position: absolute;
+  background-size: cover;
+  width: 35%;
+  background-position: center;
+  top: 0;
+  height: 100%;
+}
+/* @media (max-width: 42em){
+  .bg__img--1{
+    display: none;
+  }
+} */
+
+/* @media (max-width: 42em){
+  .bg__img{
+    width: 50%;
+    object-fit: contain;
+  }
+} */
+
+.bg__img--1{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url('../img/kento-hirasue-1FUP2FeOcT8-unsplash.jpg'); 
+  left: 0;
+}
+
+.bg__img--2{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url('../img/structures-of-lagos-Ci8ii21QSlk-unsplash.jpg');
+  left: 33%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateZ(6rem);
+  z-index: 88;
+}
+
+/* @media (max-width: 42em){
+  .bg__img--2{
+    left: 0;
+  }
+} */
+
+
+.bg__img--3{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3) ), url('../img/c-dustin-91AQt9p4Mo8-unsplash.jpg');
+  right: 0;
+}
+
+.company-name{
+  font-size: 5rem;
+  font-family: "Work Sans", sans-serif;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+  color: white;
+  white-space: nowrap;
+}
+@media (max-width: 42em){
+  .company-name{
+    font-size: 4rem;
+  }
+}
+
+.about{
+  padding: 15rem 25rem 7rem;
+  background-color: #eee;
+  color:#151581;
+}
+@media (max-width: 75em){
+  .about{
+    padding: 15rem 20rem 7rem;
+  }
+}
+@media (max-width: 64.69em){
+  .about{
+    padding: 12rem 15rem 6rem;
+  }
+}
+@media (max-width: 45em){
+  .about{
+    padding: 10rem 10rem 6rem;
+  }
+}
+@media (max-width: 27em){
+  .about{
+    padding: 10rem 6rem 6rem;
+  }
+}
+.about h1{
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+.about p{
+  font-size: 2rem;
+  color: #333;
+  line-height: 1.5;
+}
+.services{
+  margin: 15rem 5rem;
+  text-align: center;
+}
+
+@media (max-width: 31em){
+  .services{
+    margin-bottom: 10rem;
+  }
+}
+
+.heading{
+  font-size: 4rem;
+  font-weight:700;
+  text-transform: uppercase;
+  color:#151581;
+  margin-bottom: 8rem;
+}
+.services__img{
+  width: 100%;
+  height: 26rem;
+}
+
+@media (max-width: 61.875em){
+  .services__img{
+    width: 80%;
+    height: 30rem;
+    margin-right:auto;
+    margin-left:auto;
+  }
+}
+@media (max-width: 37.5em){
+  .services__img{
+    width: 90%;
+    height: 25rem;
+    margin-right:auto;
+    margin-left:auto;
+  }
+}
+
+
+.services__card h2{
+  color:#333;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+.services__text{
+  margin-top: 10rem;
+  padding:0 25rem;
+  line-height: 1.3;
+  font-size: 1.8rem;
+}
+@media (max-width: 75em){
+  .services__text{
+    padding:0 18rem;
+  }
+}
+@media (max-width: 62em){
+  .services__text{
+    padding:0 15rem;
+  }
+}
+@media (max-width: 44.875em){
+  .services__text{
+    padding:0 10rem;
+  }
+}
+
+@media (max-width: 35.625em){
+  .services__text{
+    padding:0 6rem;
+  }
+}
+
+@media (max-width: 31em){
+  .services__text{
+    padding:0 2.5rem;
+  }
+}
+
+
+
+.rentals__bg{
+  background-image: linear-gradient( rgba(238, 238, 238, 0.767), rgba(153, 153, 153, 0.747)), url('../img/boom-bucket-QjR5tMD81N4-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%,50% 100%, 0% 50%);
+  margin-bottom: 5rem;
+}
+
+
+@media (max-width: 75em){
+   .rentals__bg{
+    height: 52vh;
+  }
+}
+
+@media (max-width: 50em){
+  .rentals__bg{
+   height: 42vh;
+ }
+}
+
+@media (max-width: 36em){
+  .rentals__bg{
+   height: 35vh;
+ }
+}
+.rentals__bg h1{
+  position: absolute;
+  font-size: 5rem;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@media (max-width: 38.5em){
+  .mg{
+    margin: 0 5rem;
+  }
+}
+
+.rentals__card__img{
+  width: 100%;
+  height: 32.5rem;
+}
+
+.rentals__card__footer{
+  background-color: rgb(15, 13, 116);
+  color: #eee;
+  font-family: "Open Sans", sans-serif;
+  height: 25rem;
+  padding: 3rem 2rem ;
+}
+
+.rentals__card__footer h1{
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.rentals-contact{
+  text-align: center;
+  background-color: rgb(15, 13, 116);
+  padding: 5rem 40rem;
+  margin: 7rem 0 0;
+  font-size: 1.6rem;
+  color: #eee;
+}
+@media (max-width: 75em){
+  .rentals-contact{
+    padding: 5rem 30rem;
+  }
+}
+
+@media (max-width: 62em){
+  .rentals-contact{
+    padding: 4.5rem 25rem;
+  }
+}
+
+@media (max-width: 43.75em){
+  .rentals-contact{
+    padding: 4rem 20rem;
+  }
+}
+@media (max-width: 36.75em){
+  .rentals-contact{
+    padding: 4rem 15rem;
+  }
+}
+
+@media (max-width: 28.125em){
+  .rentals-contact{
+    padding: 3.5rem 12rem;
+  }
+}
+.rentals-contact i, a{
+  color: #999;
+}
+.rentals-contact a,
+a:visited,
+a:link{
+  text-decoration: none;
+}
+.rentals-contact h2{
+  margin-bottom: 4rem;
+}
+#location{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 75em){
+  iframe{
+    height:40rem;
+  }
+}
+@media (max-width: 50em){
+  iframe{
+    height:35rem;
+  }
+}
